@@ -1,6 +1,7 @@
 import logging
 from ..config import BaseConfigs
 
+
 def setup_logger(name: str) -> logging.Logger:
     """
     Настраивает логгер:
@@ -9,7 +10,7 @@ def setup_logger(name: str) -> logging.Logger:
     """
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
-    
+
     class InfoFilter(logging.Filter):
         def filter(self, record: logging.LogRecord) -> bool:
             return record.levelno == logging.INFO

@@ -1,3 +1,3 @@
 class BaseConfigs:
-    
+
     log_file_path = "app.log"
